@@ -248,6 +248,7 @@ footer{
     padding-left: 110px;
     padding-right: 80px;
     padding-top: 30px;
+    position: relative;
 }
 
 footer div{
@@ -281,9 +282,11 @@ footer div{
 }
 
 
-#sticky img{
+#sticky {
     position: fixed;
-    height: 50px;
+    bottom: 2%;
+    margin-left: 90%;
+    /* height: 50px;
     bottom: 50px;
     right: 50px;
     z-index: 1;
@@ -291,7 +294,15 @@ footer div{
     align-items: center;
     line-height: 50px;
     color: black;
-    font-size: 30px;
+    font-size: 30px; */
+}
+
+#sticky img{
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.5s ease;
 }
 
 
